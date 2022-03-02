@@ -17,6 +17,8 @@ elif a != b and a!=c and c != b:
     print("Треугольник разносторонний")
 elif a == c or b == c or a == b:
     print("Треугольник равнобедренный")
+    
+    
 
 
 
