@@ -2,9 +2,9 @@
 # если введено число 3486, надо вывести 6843.
 
 
-x = int(input())
+x = int(input('введите число '))
 res = 0
 while x > 0:
     res = res * 10 + x % 10
-x = x // 10
+    x = x // 10
 print(res)
