@@ -2,7 +2,7 @@
 
 import math
 
-x = int(input('Input number: '))
+
 
 odd = 0
 even = 0
@@ -17,11 +17,4 @@ def odd_or_even(x):
     odd += 1
 
 
-odd_or_even(x)
-
-while x >= 10:
-  x = math.floor(x / 10)
-  odd_or_even(x)
-
-print('Odd:', odd)
-print('Even:', even)
+cProfile.run('odd_or_even(11234567890)')

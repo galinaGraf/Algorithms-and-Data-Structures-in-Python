@@ -3,10 +3,7 @@
 # определить среднюю прибыль (за год для всех предприятий) и
 # отдельно вывести наименования предприятий, чья прибыль выше среднего и ниже среднего.
 
-
 from collections import namedtuple
-#company = {}
-
 
 company = namedtuple('Company', ['name', 'avg_profit'])
 all_companies = set()
@@ -20,8 +17,6 @@ for i in range(n):
     pr_3_qv = int(input("прибыль за 3 квартал:  "))
     pr_4_qv = int(input("прибыль за 4 квартал:  "))
     avg_profit = (pr_1_qv+pr_2_qv+pr_3_qv+pr_4_qv)   # средняя прибыль компании за год
-    #company[name] = avg_profit
-    #s += avg_profit
 
     comp = company(name=name, avg_profit=avg_profit)
 
@@ -38,3 +33,4 @@ for comp in all_companies:
 for comp in all_companies:
     if comp.avg_profit < avg_common:
         print(f'Прибыль выше среднего у компании: {comp.name} ')
+
